@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Exam jqueri</title>
+</head>
+<body>
+
+    <!-- nav begings -->
+         <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="fa-solid fa-utensils fa-2x"></i><span style="font-size: 30px; font-weight:bold;">CarmerResto</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link color me-3" aria-current="page" href="#steph0">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  me-3" href="#steph1">Plats</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  me-3" href="#steph2">Pourquoi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  me-3" href="#steph3">Commande</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  me-5" href="#steph4">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+         </nav>
+         
+                <!-- Button trigger modal -->
+                <button type="button " class="btn btn-light " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa-solid fa-cart-plus fa-2x modal-but cart-cart mt-3"></i><sup style="font-size: 60px; color: red;">0</sup>
+              </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Le nombre de commande dans la platform</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                      <span id="order-span" class="text-center display-4 zero">0</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      <!-- NAVBAR ENDS -->
+
+      <!-- COROUSEL STARTS -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/poulet.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <p class=" display-6">Nos Plats Special <p>
+              <h4 class="fw-bold display-4">POULET FRIT</h4>
+              <p>Some representative placeholder content for the second slide.</p>
+              <div class="btn btn-success">Commande Maintenant</div>
+            </div>
+          </div>
+            <div class="carousel-item">
+                <img src="images/pizza.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                <p class=" display-6">Nos Plats Special <p>
+                <h4 class="fw-bold display-4">PIZZA CHAUD</h4>
+                <p>Some representative placeholder content for the second slide.</p>
+                <div class="btn btn-success">Commande Maintenant</div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/nouille.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                <p class=" display-6">Nos Plats Special <p>
+                <h4 class="fw-bold display-4">NOUILLE EPICES</h4>
+                <p>Some representative placeholder content for the second slide.</p>
+                <div class="btn btn-success">Commande Maintenant</div>
+                </div>
+            </div>
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div id="steph0"></div>
+
+      <!-- COROUSEL END -->
+
+
+      <!-- first section PLAT POPULAIRES -->
+      <div class="container mt-5">
+        <div class="row">
+          <div id="steph1"></div>
+            <h2 class="text-center">PLATS POPULAIRES</h2>
+            <div class="col-lg-4 col-md-6 mt-3">
+                <div class="card card-1">
+                    <img src="images/pouletpane.jpg" class="card-img-top" alt="...">
+                   <center>
+                    <div class="card-body">
+                        <h5 class="card-title">Poulet Pane</h5>
+                        <span class="text-danger"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></span>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                       <span>12000FCFA</span> <button  id="order" class="btn btn-primary">Add to cart</button>
+                      </div>
+                   </center>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-3">
+                <div class="card card-1">
+                    <img src="images/chocolat.jpg" class="card-img-top" alt="...">
+                   <center>
+                    <div class="card-body">
+                        <h5 class="card-title">Framboise au Chocolat</h5>
+                        <span class="text-danger"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></span>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                       <span>5000FCFA</span> <button  id="order-1" class="btn btn-primary">Add to cart</button>
+                      </div>
+                   </center>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-3">
+                <div class="card card-1">
+                    <img src="images/biscuit.jpg" class="card-img-top" alt="...">
+                   <center>
+                    <div class="card-body">
+                        <h5 class="card-title">Savour Biscuit</h5>
+                        <span class="text-danger"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></span>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                       <span>5000FCFA</span><button  id="order-2" class="btn btn-primary">Add to cart</button>
+                      </div>
+                   </center>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-3">
+                <div class="card card-1">
+                    <img src="images/HamBurger.jpg" class="card-img-top" alt="...">
+                   <center>
+                    <div class="card-body">
+                        <h5 class="card-title">Hamburger</h5>
+                        <span class="text-danger"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></span>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                       <span>3500FCFA</span> <button  id="order" class="btn btn-primary">Add to cart</button>
+                      </div>
+                   </center>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-3">
+                <div class="card card-1">
+                    <a href="pages/poulet.html"><img src="images/Pouletdg.jpg" class="card-img-top" alt="..."></a>
+                   <center>
+                    <div class="card-body">
+                        <h5 class="card-title">Poulet Dg</h5>
+                        <span class="text-danger"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></span>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                       <span>10000FCFA</span> <button  id="order"  class="btn btn-primary">Add to cart</button>
+                      </div>
+                   </center>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-3">
+                <div class="card card-1">
+                    <img src="images/fritepomme.jpg" class="card-img-top" alt="...">
+                   <center>
+                    <div class="card-body">
+                        <h5 class="card-title">Pomme frites</h5>
+                        <span class="text-danger"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></span>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                       <span>2000FCFA</span> <button  id="order" class="btn btn-primary">Add to cart</button>
+                      </div>
+                   </center>
+                </div>
+            </div>
+        </div>
+        <!-- first section PLAT POPULAIRES ends -->
+      </div>
+
+       <!-- Second section pouquoi nous starts -->
+       
+      <div class="container container-2 mt-5">
+            <div class="row">
+                <div id="steph2"></div>
+                <h2 class="text-center mb-3">Pourquoi Nous Choisir</h2>
+                <div class="col-lg-6">
+                    <img class="img-none" src="images/tofabout.jpg" alt="">
+                </div>
+                <div class="col-lg-6 mt-3">
+                    <h2>Meilleur Repas du Pays</h2>
+                    <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, harum? Cumque sed, cum, atque non nemo consectetur, asperiores deserunt illo repellendus nostrum voluptatem. Illo perferendis cum dolorum tenetur expedita laborum consectetur natus animi quis! Asperiores laboriosam quo facilis aspernatur esse beatae et commodi, eaque delectus, quam alias saepe expedita ipsam unde natus aut, minus tempore soluta fuga vero perferendis rerum doloribus. Quibusdam facilis ipsam eaque corrupti cum autem enim tempore, culpa et quo vel! Suscipit dolorem ipsam veniam vero veritatis quod, voluptatum consequuntur, impedit voluptatem</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="btn btn-secondary"><i class="fa-solid fa-truck"></i>Livraison Gratuit</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="btn btn-secondary"><i class="fa-solid fa-dollar-sign"></i>Paiement Facil</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="btn btn-secondary"><i class="fa-solid fa-headset"></i>Service 24/7</div>
+                        </div>
+                       
+                    </div>
+                    <div class="row mt-2">
+                        <div class="btn btn-warning">Learn <i class="fa-solid fa-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+      </div>
+       <!-- Second section pouquoi nous ends -->
+
+
+
+        <!-- third section menu du jour starts -->
+        <div class="container mt-5">
+            <div class="row">
+                <h2 class="text-center fw-bold display-6">MENU DU JOUR SPECIAL</h2>
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="card card-1">
+                        <img src="images/pommepile.jpg" class="card-img-top" alt="...">
+                       <center>
+                        <div class="card-body">
+                            <h5 class="card-title">Pomme piller</h5>
+                            <span class="text-danger"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></span>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <span>2000FCFA</span> <button  id="order" class="btn btn-primary">Add to cart</button>
+                          </div>
+                       </center>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="card card-1">
+                        <img src="images/malaxé.jpg" class="card-img-top" alt="...">
+                       <center>
+                        <div class="card-body">
+                            <h5 class="card-title">Banane Malaxet</h5>
+                            <span class="text-danger"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></span>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <span>5000FCFA</span>  <button  id="order" class="btn btn-primary">Add to cart</button>
+                          </div>
+                       </center>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="card card-1">
+                        <img src="images/biscuit.jpg" class="card-img-top" alt="...">
+                       <center>
+                        <div class="card-body">
+                            <h5 class="card-title">Taro sauce jaune</h5>
+                            <span class="text-danger"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></span>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <span>5000FCFA</span> <button  id="order" class="btn btn-primary">Add to cart</button>
+                          </div>
+                       </center>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="card card-1">
+                        <img src="images/kwui.jpg" class="card-img-top" alt="...">
+                       <center>
+                        <div class="card-body">
+                            <h5 class="card-title">Le kwui</h5>
+                            <span class="text-danger"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></span>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <span>3500FCFA</span> <button  id="order" class="btn btn-primary">Add to cart</button>
+                          </div>
+                       </center>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="card card-1">
+                        <img src="images/couscousLegumes.jfif" class="card-img-top" alt="...">
+                       <center>
+                        <div class="card-body">
+                            <h5 class="card-title">couscous legumes</h5>
+                            <span class="text-danger"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></span>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <span>10000FCFA</span> <button   id="order" class="btn btn-primary">Add to cart</button>
+                          </div>
+                       </center>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="card card-1">
+                        <img src="images/okok.jpg" class="card-img-top" alt="...">
+                       <center>
+                        <div class="card-body">
+                            <h5 class="card-title">Le kock</h5>
+                            <span class="text-danger"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></span>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <span>2000FCFA</span> <button id="order" class="btn btn-primary">Add to cart</button>
+                          </div>
+                       </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- third section menu du jour ends -->
+
+         <!-- forth section starts formulaire -->
+         <div id="steph3"></div>
+         <div class="container mt-5">
+
+            <h2 class="text-center">Commande Maintenant Rapide Et Gratuit</h2>
+            <div class="row roww">
+               <form action="">
+                   <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <label for="validationCustom01" class="form-label"></label>
+                            <input type="text" class="form-control" id="validationCustom01"  placeholder="Entrer votre nom " required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <label for="validationCustom01" class="form-label"></label>
+                            <input type="number" class="form-control" id="validationCustom01"  placeholder="Entrer Numero de telephone" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <label for="validationCustom01" class="form-label"></label>
+                            <input type="text" class="form-control" id="validationCustom01"  placeholder="Entrer le nom de la nouriture" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <label for="validationCustom01" class="form-label"></label>
+                            <input type="text" class="form-control" id="validationCustom01"  placeholder="Autre Nouriture" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <label for="validationCustom01" class="form-label"></label>
+                            <input type="number" class="form-control" id="validationCustom01"  placeholder="Nombre de commande" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <label for="validationCustom01" class="form-label"></label>
+                            <input type="date" class="form-control" id="validationCustom01" value="date" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label"></label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Entrer votre Address"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label"></label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Description sur la command"></textarea>
+                            </div>
+                        </div>
+                       <button type="submit" class="btn btn-success">Commander</button>
+                       </div>  
+                   </div>
+               </form>
+            </div>
+         </div>
+         <!-- forth section ends formulaire -->
+         <div id="steph4"></div>
+         <div class="container mt-5">
+            <div class="row justify-content-center">
+                <h2 class="text-center fw-bold">A propos De Nous</h2>
+                <div class="col-md-6">
+                    <label for="exampleColorInput" class="form-label">Changer La couleur du text</label>
+                    <input type="color" style="width: 400px; height: 30px;" class="form-control form-control-color" id="color-change" value="" title="Choose your color">
+                </div>
+                <div class="col-md-6">
+                    <!-- <label for="customRange1" class="form-label">Change la taille du texte <span id="font">0</span>px</label> -->
+                    <span class="value">40</span>
+                    <input type="range" class="form-range" id="range-slider" min="16" max="100" value="40" step="1" >
+                </div>
+
+                <!-- accordion begings -->
+
+                <div class="col-md-9">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item ">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button bg-danger  text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                             lorem
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-danger">
+                             <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, voluptatibus. Velit, delectus quasi repellat soluta, doloribus ut ipsam eveniet architecto fugit, deserunt aut aperiam? Laborum id sequi iste quo, optio corporis similique rerum! Laudantium labore adipisci tempora ex assumenda recusandae dolor, officia eum deserunt at ad pariatur ipsam consequuntur quasi.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button bg-danger collapsed  text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            lorem
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-danger">
+                              <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae cum corrupti voluptates incidunt tenetur, dolorem fugit porro, aperiam commodi repudiandae odio repellendus omnis, nisi in eaque magni. Necessitatibus, similique veniam libero quisquam perspiciatis harum dolorum, velit consequuntur animi fugiat sapiente porro. Sint eius qui autem nostrum. Possimus fugit laudantium quam.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed bg-danger  text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              lorem
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-danger">
+                             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nisi rerum explicabo voluptas eveniet dolores numquam iure voluptatem vitae maiores at corporis asperiores, nostrum facere, tempore ea! Ut laudantium fugiat repudiandae alias exercitationem ex dolorem distinctio suscipit culpa non perspiciatis, aliquid, et ab pariatur? Odio aliquam facere quae adipisci repellendus.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed bg-danger  text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                               lorem
+                              </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                              <div class="accordion-body bg-danger ">
+                                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium impedit animi reiciendis atque in autem officiis ducimus, incidunt molestias magnam sunt similique consectetur nulla velit qui. Consequuntur, aut sequi inventore et ullam assumenda tempore distinctio facere! Aspernatur, explicabo quaerat eum, numquam fugit, delectus perferendis ut sapiente laborum recusandae alias fuga?</p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed bg-danger text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              lorem
+                              </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                              <div class="accordion-body bg-danger">
+                                <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe assumenda dicta amet inventore, recusandae neque nisi quisquam provident vel nulla harum dignissimos nemo molestias nam ducimus rem est quae repellendus asperiores, labore esse deleniti eius. Quisquam illo expedita explicabo neque nostrum magni incidunt molestiae dolores accusantium. Voluptas culpa expedita eligendi.</p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  <!-- accordion ends -->
+            </div>
+         </div>
+
+         <footer style="background-color: black; height: 30px;">
+            <div class="container-fluid">
+                <div class="row text-white ">
+                   <span> copyright@2022 by HTTC</span> <span class="iconn"><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-youtube"></i></span>
+                </div>
+            </div>
+         </footer>
+
+
+    
+
+
+    
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jqueri.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

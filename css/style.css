@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    position: fixed;
+}
+.nav-link{
+    margin: 10px;
+    
+}
+
+.color{
+    background-color: darkgray;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+}
+.nav-link:hover{
+    background:darkgrey;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    transition: 1.0s;
+}
+
+
+
+.modal-but{
+    
+    position: relative;
+    left: 95%;
+    z-index: 10000;
+    position: fixed;
+}
+
+.zero{
+    position: relative;
+    left: 50%;
+}
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.carousel-item img{
+    height: 32rem;
+  
+}
+
+.carousel-caption{
+  position: absolute;
+  top: 40%;
+}
+
+.card-1 img{
+    height: 200px;
+    border: none;
+}
+
+.card-1{
+    box-shadow: 6px 6px 6px 6px darkgray;
+}
+
+
+/* .container-2{
+    box-shadow: 3px 3px 3px 3px lightgray;
+} */
+
+.container-2 div img{
+    height: 500px;
+    width: 500px;
+    border-radius: 100%;
+}
+
+.para{
+    text-align: justify;
+}
+
+.roww{
+    width: 80%;
+    height: 100%vh;
+    position: relative;
+    left: 10%;
+   background-color: rgb(230, 228, 228);
+    box-shadow: 6px 6px 6px 6px darkgray;   
+}
+
+.accordion-item{
+ 
+  margin: 15px;
+}
+
+.iconn{
+    font-size: 1.5rem;
+    color: darkgray;
+    position: absolute;
+    left: 92%;
+}
+
+@media screen and (max-width:1100px) {
+    .img-none{
+        display: none;
+    }
+
+    .cart-cart{
+        position: absolute;
+        left: 88%;
+        top: 90%;
+        z-index: 10000;
+        position: fixed;
+    }
+}
